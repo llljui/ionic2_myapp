@@ -1,17 +1,44 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-slides pager slides>
+  <ion-slide style="background-color: green">
+    <h2>Slide 1</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: red">
+    <h2>Slide 3</h2>
+  </ion-slide>
+</ion-slides>
+<ion-grid>
+    <ion-row justify-content-between>
+      <ion-col col-7>
+        <div>1 of 2</div>
+      </ion-col>
+      <ion-col col-4>
+        <div>2 of 2</div>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-between>
+      <ion-col col-4>
+        <div>1 of 2</div>
+      </ion-col>
+      <ion-col col-7>
+        <div>2 of 2</div>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-between>
+      <ion-col col-7>
+        <div>1 of 2</div>
+      </ion-col>
+      <ion-col col-4>
+        <div>2 of 2</div>
+      </ion-col>
+    </ion-row>    
+  </ion-grid>
+   <button ion-button block (click)="presentLoading()">Show Loading</button>
 </ion-content>
+
+
